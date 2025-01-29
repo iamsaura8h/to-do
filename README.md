@@ -8,6 +8,7 @@
  - Supabase
  - PostgreSql
  - TailwindCSS
+ - Node.js
  
 ### Contribution
 #### this is a opens source project can contributors are welcome to contribute! 😊
