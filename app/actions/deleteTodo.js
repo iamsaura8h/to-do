@@ -10,7 +10,8 @@ export default async function deleteTodo(FormData){
     try {
         await prisma.todo.delete({
             where:{id}
-        })
+        });
+        revalidatePath('/');
     }
     catch(e){
         console.error(e);
