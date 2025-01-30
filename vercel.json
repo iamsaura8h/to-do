@@ -9,7 +9,7 @@
       }
     ],
     "env": {
-      "DATABASE_URL": "@your-database-url"
+      "DATABASE_URL": "postgresql://postgres.igivhvgvisnvhuzupuhd:SaurabhSupabase@aws-0-ap-south-1.pooler.supabase.com:5432/postgres"
     },
     "buildCommand": "npm run build && npx prisma generate"
   }
