@@ -1,0 +1,20 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
+      }
+    ],
+    "env": {
+      "DATABASE_URL": "postgresql://postgres.igivhvgvisnvhuzupuhd:SaurabhSupabase@aws-0-ap-south-1.pooler.supabase.com:5432/postgres"
+    },
+    "postbuild": {
+      "commands": [
+        "npx prisma generate"
+      ]
+    }
+  }
+  
